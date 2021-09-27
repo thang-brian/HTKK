@@ -1,0 +1,200 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lorem Ipsum', sans-serif;
+    font-size:13.5px;
+}
+body{
+    width: 1400px;
+    margin: 0 auto;
+    line-height: 16px;
+}
+.logo{
+    background-image: url("../img/nav-home.png");
+}
+header{
+    background-image: url(../img/background-header-china.png);
+    background-size: 100% 100%;
+}
+.menu{
+    padding-top: 34px;
+}
+nav{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    height: 40%;
+    margin-top: 40px;
+    margin-left: 49px;
+    margin-right: 41px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+}
+nav li{
+    padding: 13px 1px 1px 1px;
+    margin: 12px;
+    
+}
+nav li a{
+    text-decoration: none;
+    color: #467adb;
+    font-size: 12.8px;
+}
+nav li:hover{
+    font-weight: bold;
+}
+.pr-cn{
+    padding: 50px 20px 50px 20px;
+}
+.pr-cn-value{
+    font-size: 21px !important;
+    background-image: url(../img/pr-cn-background.png);
+    width: 38%;
+    margin: 0 404px;
+    padding: 10px 10px 10px 10px;
+}
+.pr-cn p{
+    font-size: 39px;
+    text-align: center;
+    color: white;
+    padding: 10px 20px 20px 20px;
+}
+.introduction{
+    background-image: url(../img/introduction-cn.png);
+    text-align: center;
+    width: 296px;
+    font-size: 19px;
+    margin-left: 552px;
+    padding: 5px 5px 5px 5px;
+    color: white;
+}
+.introduction2{
+    background-image: url(../img/introduction-cn-background.png);
+}
+.introduction2 p{
+    padding: 50px 50px 50px 50px;
+}
+.btn{
+    border-radius: 12px;
+    background-image: url(../img/btn.png);
+    color: white;
+    padding: 1px 15px 1px 15px;
+    margin-left: 49rem;
+}
+.dv{
+    margin-top: 30px;
+}
+.img-dv{
+    width: 317px;
+}
+.dichvu-value{
+    display: flex;
+    flex-wrap:wrap;
+}
+.dichvu-vc{
+    margin: 16px;
+    width: 22.7%;
+}
+.dichvu-vl-background{
+    background-image: url(../img/introduction-cn.png);
+    color: white;
+    text-align: center;
+    width: 206px;
+    height: 32px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 51px;
+    font-size: 11px;
+}
+.dichvu-vl-txt{
+    background-image: url(../img/introduction-cn-background.png);
+    /* padding: 32px 5px 0 5px; */
+    text-align: center;
+    margin-top: 21px;
+    padding: 32px;
+}
+.khacbiet{
+    margin-top: 30px;
+}
+.div-kb{
+    margin: 16px;
+    width: 22.7%;
+    
+}
+.img-khacbiet{
+    width: 304px;
+    height: 277px;
+    margin: 21px;
+    background-size: 100% 100%;
+    z-index: 1;
+    
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.kb-txt{
+    position: absolute;
+    top: 11%;
+    left: 40%;
+    transform: translate(-22%, -50%);
+}
+.quytrinh-chang{
+    display:flex;
+}
+.qt-value{
+    display: grid;
+    margin: 5px 120px;
+}
+.qt1-img{
+    position: absolute;
+}
+.qt-txt{
+    padding: 20px 100px 5px 100px;
+
+}
+footer{
+    background-image: url(../img/background-footer-CN.png);
+    color: white;
+}
+.img-BCT{
+    width: 30%;
+    height: 30%;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 90px;
+}
+.footer-menu{
+    display: flex;
+}
+.footer-menu1{
+    display: flex;
+    background-image: url(../img/footer-menu-CN.png);
+    margin: 10px 50px 10px 340px;
+}
+.footer-menu1 p{
+    padding: 10px 97px 10px 82px;
+}
+.footer-menu2{
+    background-image: url(../img/footer-menu-CN.png);
+    padding: 10px 100px 10px 100px;
+    margin: 10px 0 10px 0;
+}
+.footer-txt{
+    color: white;
+    margin-top: 21px;
+    padding: 50px 80px 30px 80px;
+}
+.link-social{
+    padding-top:5px;
+    margin-left: 82rem;
+}
+.link-social div a{
+    padding: 12px;
+    background-color: bisque;
+}
