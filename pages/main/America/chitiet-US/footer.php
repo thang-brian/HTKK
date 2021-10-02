@@ -23,11 +23,11 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 
             </p>
             <div class="footer-txtcs">
-                <p class="lang" key="tttgiup">Trung tâm trợ giúp</p>
-                <p class="lang" key="hdtaotk">Hướng dẫn tạo tài khoản</p>
-                <p class="lang" key="hdmuah">Hướng dẫn mua hàng</p>
-                <p class="lang" key="trahvc">Trả hàng & vận chuyển</p>
-                <p class="lang" key="cauhoi">Các câu hỏi thường gặp</p>
+                <p><?php echo $lang['tttgiup'] ?></p>
+                <p><?php echo $lang['hdtaotk'] ?></p>
+                <p><?php echo $lang['hdmuah'] ?></p>
+                <p><?php echo $lang['trahvc'] ?></p>
+                <p><?php echo $lang['cauhoi'] ?></p>
             </div>
             <p class="footer-txt ">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 

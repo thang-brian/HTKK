@@ -1,3 +1,11 @@
+<?php 
+session_start();
+include("../../../../admincp/config/config.php");
+$sql_nenxanh1 = "SELECT * FROM logo WHERE style = 1 ORDER BY id DESC";
+$query_lietke_nx1 = mysqli_query($mysqli,$sql_nenxanh1);
+$sql_nenxanh = "SELECT * FROM logo WHERE style = 1 ORDER BY id DESC";
+$query_lietke_nx = mysqli_query($mysqli,$sql_nenxanh);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +20,7 @@
 </head>
 <body>
     <?php 
+        include('../../../../language/lang_config.php');
         include("../chitiet-CN/header.php");
         include("../chitiet-CN/main.php");
         include("../chitiet-CN/footer.php");

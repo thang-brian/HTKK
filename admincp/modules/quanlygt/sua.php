@@ -1,13 +1,19 @@
 <?php
-	$sql_lietke_gt = "SELECT * FROM noidung WHERE loaind = 'gioithieu' ORDER BY id DESC";
-	$query_sua_gt= mysqli_query($mysqli,$sql_lietke_gt);
+	$loai = $_GET['loai'];
+	if($loai == 'gioithieu'){
+	  $sql_lietke_gt = "SELECT * FROM noidung WHERE loaind = 'gioithieu' ORDER BY id ";
+	  $query_sua_gt= mysqli_query($mysqli,$sql_lietke_gt);
+	}else{
+	  $sql_lietke_gt = "SELECT * FROM noidung WHERE loaind = 'gioithieuct' ORDER BY id ";
+	  $query_sua_gt= mysqli_query($mysqli,$sql_lietke_gt);
+	}
 ?>
 <h3>Sửa thông tin giới thiệu</h3>
 <table border="1" width="100%" style="border-collapse: collapse;">
 <?php
 while($row = mysqli_fetch_array($query_sua_gt)) {
 ?>
- <form method="POST" action="modules/quanlygt/xuly.php?id=<?php echo $row['id'] ?>" enctype="multipart/form-data">
+ <form method="POST" action="modules/quanlygt/xuly.php?id=<?php echo $row['id'] ?>&loai=$loai" enctype="multipart/form-data">
 	  <tr>
 	  	<td>Thông tin tiếng Việt</td>
 	  	<td><textarea rows="10"  name="gt" style="resize: none"><?php echo  $row['chitiet_vi'] ?></textarea></td>

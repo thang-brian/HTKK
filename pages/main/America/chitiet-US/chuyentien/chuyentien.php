@@ -10,10 +10,11 @@
                 <p class="lang" key="dvnapUS">Dịch vụ đổi tiền, chuyển tiền Mỹ, nạp tiền ví Paypal</p>
             </div>
             <div style="padding: 70px;">
-                <p class="lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-                </p>
+            <?php
+                while($row = mysqli_fetch_array($query_lietke_gt)){
+            ?>
+                <p class="lang" key="p"><?php echo $row['chitiet_'.$_SESSION['lang']] ?></p>
+            <?php }?>
             </div>
             <div class="img-doitien" >
                 <p class="lang" key="doitienVTUS">DỊCH VỤ CHUYỂN VÀ ĐỔI TIỀN TỪ HOA KỲ VỀ VIỆT NAM & TỪ VIỆT NAM SANG HOA KỲ</p>

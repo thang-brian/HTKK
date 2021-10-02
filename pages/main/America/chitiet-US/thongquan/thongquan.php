@@ -1,6 +1,7 @@
 <?php 
     session_start();
     include("../../../../../admincp/config/config.php");
+    include('../../../../../language/lang_config.php');
     $sql_nenxanh1 = "SELECT * FROM logo WHERE style = 1 ORDER BY id DESC";
 	$query_lietke_nx1 = mysqli_query($mysqli,$sql_nenxanh1);
     $sql_nenxanh = "SELECT * FROM logo WHERE style = 1 ORDER BY id DESC";
@@ -28,90 +29,90 @@
                 <?php }?>
                 <nav>
                     <li class="logo">
-                        <a href="../../vc-US.php" class="lang" key="home">TRANG CHỦ</a>
+                        <a href="../../vc-US.php"><?php echo $lang['home'] ?></a>
                     </li>
                     <li>
-                        <a href="#" class="lang" key="gthieu">GIỚI THIỆU</a>
+                        <a href="#" ><?php echo $lang['gthieu'] ?></a>
                     </li>
                     <li>
-                        <a href="#" class="lang" key="dvu">DỊCH VỤ</a>
+                        <a href="#"><?php echo $lang['dvu'] ?></a>
                     </li>
                     <li>
-                        <a href="#" class="lang" key="tintuc">TIN TỨC</a>
+                        <a href="#"><?php echo $lang['tintuc'] ?></a>
                     </li>
                     <li>
-                        <a href="#" class="lang" key="lienhe">LIÊN HỆ</a>
+                        <a href="#"><?php echo $lang['lienhe'] ?></a>
                     </li>
                 </nav>
     </div>
     <div>
         <header>
-            <p id="link-background-value" class="lang" key="home">TRANG CHỦ</p>
+            <p id="link-background-value"><?php echo $lang['home'] ?></p>
             <i id="link-background-value" class="fas fa-greater-than"></i>
-            <p id="link-background-value" class="lang" key="hdan">HƯỚNG DẪN</p>
+            <p id="link-background-value" ><?php echo $lang['hdan'] ?></p>
         </header>
     </div>
     <div class="main">
     <div class="introduction2" >
         <div>
-            <h4 class="tieude lang" key="thutuc">THỦ TỤC HẢI QUAN LÀ GÌ ?</h4>
-            <p class="tieude-txt lang" key="p" >
+            <h4 class="tieude"><?php echo $lang['thutuc'] ?></h4>
+            <p class="tieude-txt">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
                 ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in 
                 hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros 
                 et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
             </p>
-            <button class="btn lang" key="xemt" >Xem thêm</button>
+            <button class="btn"><?php echo $lang['xemt'] ?></button>
         </div>
-        <h4 class="tieude2 lang" key="dvtquan">DỊCH VỤ THÔNG QUAN HÀNG HOÁ </h4>
+        <h4 class="tieude2"><?php echo $lang['dvtquan'] ?></h4>
         <div class="dvthongquan">
             <img src="../../../../../img/dvthongquan.png" alt="logo" >
-            <p class="lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
                 tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
                 suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
                 esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at 
                 vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril 
                 delenit augue duis dolore te feugait nulla facilisi. </p>
         </div>
-        <h4 class="tieude2 lang" key="dvtdien">DỊCH VỤ TOÀN DIỆN</h4>
+        <h4 class="tieude2"><?php echo $lang['dvtdien'] ?></h4>
         <div class="toandien" >
             <div class="toandien-value">
                 <img src="../../../../../img/khaibaohq.png" alt="">
                 <p class="toandien-td lang" key="kbhquan">KHAI BÁO HẢI QUAN</p>
-                <p class="toandien-txt lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
+                <p class="toandien-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
             </div>
             <div class="toandien-value">
                 <img src="../../../../../img/vtduongbien.png" alt="">
                 <p class="toandien-td lang" key="vtbien">VẬN TẢI ĐƯỜNG BIỂN</p>
-                <p class="toandien-txt lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
+                <p class="toandien-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
             </div>
             <div class="toandien-value">
                 <img src="../../../../../img/vtduongbo.png" alt="">
                 <p class="toandien-td lang" key="vtbo">VẬN TẢI ĐƯỜNG BỘ</p>
-                <p class="toandien-txt lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
+                <p class="toandien-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
             </div>
             <div class="toandien-value">
                 <img src="../../../../../img/vthangkhong.png" alt="">
                 <p class="toandien-td lang" key="vtkhong">VẬN TẢI HÀNG KHÔNG</p>
-                <p class="toandien-txt lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
+                <p class="toandien-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
             </div>
             <div class="toandien-value">
                 <img src="../../../../../img/cpnhanh.png" alt="">
                 <p class="toandien-td lang" key="cpqt">CHUYỂN PHÁT NHANH QUỐC TẾ</p>
-                <p class="toandien-txt lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
+                <p class="toandien-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt .</p>
             </div>
         </div>
         <div class="tieude-4" >
-        <h4 class="tieude2 lang" key="tintuc">TIN TỨC</h4>
-        <h4 class="tieude2 lang" key="cauhoi">CÂU HỎI THƯỜNG GẶP</h4>
+        <h4 class="tieude2"><?php echo $lang['tintuc'] ?></h4>
+        <h4 class="tieude2"><?php echo $lang['cauhoi'] ?></h4>
         </div>
         <div class="tieude-4txt">
-            <p class= "lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
                 dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
                 lobortis nisl ut aliquip ex ea commodo consequat. 
             </p>
-            <p class= "lang" key="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
                 dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
                 lobortis nisl ut aliquip ex ea commodo consequat. 
             </p>
@@ -119,7 +120,7 @@
     </div>
     <div class="lq" >
                 <div class="b-bvlq">
-                    <p class="tieude-lq lang" key="dvctoi">DỊCH VỤ CỦA CHÚNG TÔI</p>
+                    <p class="tieude-lq"><?php echo $lang['dvctoi'] ?></p>
                     <p class="lang" key="kbhquan">Khai báo Hải Quan</p>
                     <br>
                     <p class="lang" key="vtbien">Vận tải đường biển</p>
@@ -131,7 +132,7 @@
                     <p class="lang" key="cpqt">Chuyển phát nhanh quốc tế</p>
                 </div>
                 <div class="b-bvlq">
-                    <p class="tieude-lq lang" key="baiviet">BÀI VIẾT</p>
+                    <p class="tieude-lq"><?php echo $lang['baiviet'] ?></p>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                         sed diam nonummy nibh euismod tincidunt .
                     </p>
@@ -149,9 +150,9 @@
         <?php }?>
         </div>
             <div class="footer-menu1">
-                <p class="lang" key="dvu">DỊCH VỤ </p>
-                <p class="lang" key="lienket">LIÊN KẾT</p>
-                <p class="lang" key="ttlienhe">THÔNG TIN LIÊN HỆ</p>
+                <p><?php echo $lang['dvu'] ?> </p>
+                <p><?php echo $lang['lienket'] ?></p>
+                <p><?php echo $lang['ttlienhe'] ?></p>
             </div>
         </div>
         <div class="footer-menu">
@@ -166,11 +167,11 @@
             <a href="" class="lang" key="cpqt">Chuyển phát nhanh quốc tế</a>
             </div>
             <div class="footer-txt">
-            <a href="../../vc-US.php" class="lang" key="home">TRANG CHỦ</a>
-            <a href="" class="lang" key="gthieu">GIỚI THIỆU</a>
-            <a href="" class="lang" key="dvu" >DỊCH VỤ</a>
-            <a href="" class="lang" key="tintuc">TIN TỨC</a>
-            <a href="" class="lang" key="lienhe">LIÊN HỆ</a>
+            <a href="../../vc-US.php"><?php echo $lang['home'] ?> </a>
+            <a href=""><?php echo $lang['gthieu'] ?> </a>
+            <a href="" ><?php echo $lang['dvu'] ?> </a>
+            <a href=""><?php echo $lang['tintuc'] ?> </a>
+            <a href=""><?php echo $lang['lienhe'] ?> </a>
             </div>
             <p class="footer-txt3 lang" key="p" >
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 

@@ -1,6 +1,6 @@
 <?php
 include('../../config/config.php');
-
+$loai = $_GET['loai'];
 $gt = $_POST['gt'];
 $gt_en = $_POST['gt_en'];
 
@@ -11,7 +11,7 @@ if(isset($_POST['suagt'])){
 	if(mysqli_query($mysqli,$sql_update)){
 		echo 'Error: '.$sql_update;
 	}
-	header('Location:../../index.php?action=quanlygt&query=lietke');
+	header('Location:../../index.php?action=quanlygt&query=lietke&loai=$loai');
 }
 
 ?>

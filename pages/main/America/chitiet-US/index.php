@@ -5,6 +5,8 @@
 	$query_lietke_nx1 = mysqli_query($mysqli,$sql_nenxanh1);
     $sql_nenxanh = "SELECT * FROM logo WHERE style = 1 ORDER BY id DESC";
 	$query_lietke_nx = mysqli_query($mysqli,$sql_nenxanh);
+    $sql_lietke_gt = "SELECT * FROM noidung WHERE loaind = 'gioithieuct' ORDER BY id ";
+	$query_lietke_gt= mysqli_query($mysqli,$sql_lietke_gt);
 ?>
 <!DOCTYPE html>
 <html lang="en">

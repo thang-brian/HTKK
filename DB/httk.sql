@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th9 27, 2021 lúc 04:43 AM
+-- Thời gian đã tạo: Th10 01, 2021 lúc 06:22 AM
 -- Phiên bản máy phục vụ: 10.4.20-MariaDB
 -- Phiên bản PHP: 7.3.29
 
@@ -182,7 +182,8 @@ INSERT INTO `noidung` (`id`, `loaind`, `chitiet_vi`, `chitiet_en`) VALUES
 (3, 'tintuc', 'Chế biến sâu và sản xuất theo hướng hữu cơ đang là giải pháp được khuyến cáo nhằm gia tăng giá trị xuất khẩu mặt hàng gia vị và hương liệu của Việt Nam', 'Deep processing and organic production are recommended solutions to increase the export value of spices and flavorings of Vietnam.'),
 (4, 'ykien', 'Rất vui mừng khi hàng hóa được đến cảng sớm ', 'Very happy when the goods arrive at the port soon'),
 (5, 'vbpl', 'Tổng cục Hải quan nhận được công văn không số ngày 24/8/2021 của Công ty TNHH Icel Logistics đề nghị hướng dẫn việc xử lý thuế xuất khẩu đối với nguyên liệu nhập khẩu từ nước ngoài (theo loại hình A12, E31) để sản xuất hàng hóa xuất khẩu ra nước ngoài và xuất bán cho doanh nghiệp chế xuất.', 'The General Department of Customs received the letter No. dated August 24, 2021 from Ice Logistics Co., Ltd., requesting guidance on the handling of export tax for imported materials from abroad (according to types A12, E31) to produce goods for export abroad and sell to export processing enterprises.'),
-(6, 'gioithieu', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.');
+(6, 'gioithieu', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'),
+(7, 'gioithieuct', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -250,7 +251,7 @@ ALTER TABLE `logo`
 -- AUTO_INCREMENT cho bảng `noidung`
 --
 ALTER TABLE `noidung`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 	//Check whether the language is set in session or not
 	if(!isset($_SESSION['lang']))
 	{
-		//If Language is not set in session then set default language as English
+		//If Language is not set in session then set default language as Vietnamese
 		$_SESSION['lang'] = 'vi';
 	}
 	else if (isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang'])){

@@ -1,21 +1,27 @@
 <div class="header" >
     <div class="header-bottom">
-                <img style="width: 15%;height: 20%;padding-top: 32px;" src="../../../../img/logo-footer.png" alt="Logo">
+            <?php 
+                while($row = mysqli_fetch_array($query_lietke_nx)){
+            ?>    
+            <img style="width: 15%;height: 20%;padding-top: 32px;" src="../../../../admincp/modules/quanlylogo/uploads/<?php echo $row['hinhanh'] ?>" alt="Logo">
+            <?php 
+                }
+            ?> 
                 <nav>
                     <li class="logo">
                         <a href="../vc-china.php"><i style="color:white" class="fas fa-home"></i></a>
                     </li>
                     <li>
-                        <a href="" class="lang" key="bg">BẢNG GIÁ</a>
+                        <a href="#" ><?php echo $lang['bg'] ?></a>
                     </li>
                     <li>
-                        <a href="" class="lang" key="hdan">HƯỚNG DẪN</a>
+                        <a href="#"><?php echo $lang['hdan'] ?></a>
                     </li>
                     <li>
-                        <a href="" class="lang" key="csach">CHÍNH SÁCH</a>
+                        <a href="#"><?php echo $lang['csach'] ?></a>
                     </li>
                     <li>
-                        <a href=""class="lang" key="tintuc">TIN TỨC</a>
+                        <a href="#"><?php echo $lang['tintuc'] ?></a>
                     </li>
                 </nav>
             </div>

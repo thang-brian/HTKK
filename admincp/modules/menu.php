@@ -5,12 +5,12 @@
                             <div class="sb-sidenav-menu-heading"> DANH MỤC </div> 
                 
                             <a class="nav-link" href="index.php?action=quanlylogo&query=lietke">
-                                <div class="sb-nav-link-icon"><i class="fas fa-warehouse"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-images"></i></div>
                                 QUẢN LÝ LOGO
                             </a>
                             
                             <a class="nav-link collapsed" href="product.jsp?id=1" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-motorcycle"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
                                 CHỈNH SỬA TRANG CHỦ
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -29,7 +29,7 @@
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="product.jsp?id=1" data-toggle="collapse" data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon "><i class="fas fa-motorcycle"></i></div>
+                                <div class="sb-nav-link-icon "><i class="fas fa-tasks"></i></i></div>
                                 SẢN PHẨM DỊCH VỤ
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -39,12 +39,14 @@
                                     Vận chuyển hàng
                                     </div>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item nav-link" style="color:black" href="index.php?action=quanlygt&query=lietke"> Giới thiệu HTKK </a>
+                                        <a class="dropdown-item nav-link" style="color:black" href="index.php?action=quanlygt&query=lietke&loai=gioithieu"> Giới thiệu HTKK </a>
                                         <a class="dropdown-item nav-link" style="color:black" href="index.php?action=quanlydvvc&query=lietke"> Dịch vụ - Thị trường </a>
                                         <a class="dropdown-item nav-link" style="color:black" href="index.php?action=quanlykbvc&query=lietke"> Sự khác biệt </a>
                                         <a class="dropdown-item nav-link" style="color:black" href="index.php?action=quanlybgvc&query=lietke"> Bảng giá vận chuyển </a>
                                         <a class="dropdown-item nav-link" style="color:black" href="index.php?action=quanlyttvc&query=lietke"> Tin tức </a>
-                                    </div>   
+                                        <a class="dropdown-item nav-link" style="color:black" href="index.php?action=quanlygt&query=lietke&loai=2"> Thông tin chuyển tiền </a>
+                                    </div> 
+                                    
                                 </nav>
                                 
                             </div>
